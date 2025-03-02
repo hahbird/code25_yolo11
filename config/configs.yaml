@@ -1,0 +1,59 @@
+# 模型相关的配置文件
+MODEL:
+  # 模型文件
+  WEIGHT: './weights/yolo11s/weights/best.pt'
+  # 取值 'cpu'、'0'、 '1'、 '2'、 '3'等 cpu代表以cpu进行推理，0代表使用第0块显卡进行推理
+  DEVICE: 'cpu'
+  # 阈值
+  CONF: 0.4
+  # 过滤类别
+  CLASSES: None
+  # 图片大小
+  IMGSIZE: 640
+
+
+UI:
+  # 背景图片
+  background: './icon/background.jpg'
+  # 主图
+  zhutu2: './icon/zhutu2.png'
+  # 最上方的名称
+  title: '暴力检测识别系统'
+  # 名称
+  label_title: '暴力检测识别系统'
+  label_title_color: "0, 0, 0"
+  # 开始识别按钮背景颜色
+  start_button_bg: "255,115,114"
+  # 开始识别按钮字体颜色
+  start_button_font: "0, 0, 0"
+  # 导出数据按钮颜色
+  export_button_bg: "255,115,114"
+  # 导出数据按钮字体颜色
+  export_button_font: "0, 0, 0"
+  # 图片填充 RGB格式
+  padvalue: [ 252,205,189 ]
+  # 表格每列的宽度
+  column_widths: [ 60, 240, 140, 250, 100, 100, 160 ]
+  # 表格中字体的颜色 RGB格式
+  column_color: [ 0, 0, 0 ]
+  # 主图区域颜色
+  label_img_color: "255, 255, 255, 50"
+  # 表格相关
+  table_widget_info_styles:
+    # 表头背景
+    header_background_color: "255,115,114"
+    # 表头字体
+    header_color: "white"
+    # 表格背景
+    background_color: "255,255,255"
+    # 滑过背景
+    item_hover_background_color: "255,115,114"
+
+
+CONFIG:
+  # 摄像头id,如果发现打开摄像头没有画面，
+  camera_num: 0
+  #
+  chinese_name: {
+    'violence': '暴力',
+    '无目标': '无目标' }
